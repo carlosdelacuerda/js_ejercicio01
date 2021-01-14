@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01</title>
+</head>
+<body>
+<script>
+    //dados 54321 segundos hay que calcular la cantidad de horas minutos y segundos que hay en dicha cantidad dada
+
+    //por consola el valor total de horas, minutos y segundos
+
+    //tiene que funcionar para cualquier valor
+
+var segundosTotales , minutosConDecimales , horasConDecimales , horasMinutosYSegundos , decimalHoras;
+
+segundosTotales = 54321;
+
+minutosConDecimales = segundosTotales / 60;
+horasConDecimales = segundosTotales / (60*60);
+horas = Math.trunc(horasConDecimales);
+
+var decimalHoras = horasConDecimales - Math.floor(horasConDecimales)
+var decimalesAMinutos = decimalHoras * 60;
+var minutos = Math.trunc(decimalesAMinutos);
+var decimalMinutos = minutosConDecimales - Math.floor(minutosConDecimales)
+var segundosConDecimales = decimalMinutos * 60;
+var  segundos = Math.trunc(segundosConDecimales);
+
+alert(horas + " " + "horas" + " " + minutos + " " + "minutos" + " " + segundos + " " + "segundos");
+
+</script>
+</body>
+</html>
